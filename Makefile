@@ -16,7 +16,7 @@ MEM 		= ft_bzero ft_calloc ft_memchr ft_memcmp ft_memcpy ft_memmove ft_memset
 
 STR 		= ft_strdup ft_strchr ft_strlcat ft_strlcpy ft_strlen ft_strcmp ft_strncmp \
 	 		  ft_strnstr ft_strrchr ft_split ft_strjoin ft_strmapi ft_strtrim ft_substr \
-	  		  ft_striteri get_next_line 
+	  		  ft_striteri get_next_line clean_join
 
 PUT 		= ft_putchar_fd ft_putendl_fd ft_putnbr_fd ft_putstr_fd
 

@@ -6,7 +6,7 @@
 /*   By: tle-dref <tle-dref@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:54:19 by tle-dref          #+#    #+#             */
-/*   Updated: 2024/11/04 20:26:33 by tle-dref         ###   ########.fr       */
+/*   Updated: 2024/11/05 04:59:49 by tle-dref         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,3 +73,4 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
 char				*get_next_line(int fd);
 int					ft_printf(const char *format, ...);
+char				*clean_join(char *s1, char *s2);
