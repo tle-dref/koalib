@@ -6,11 +6,13 @@
 /*   By: tle-dref <tle-dref@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 04:19:58 by tle-dref          #+#    #+#             */
-/*   Updated: 2024/11/04 20:26:33 by tle-dref         ###   ########.fr       */
+/*   Updated: 2024/11/12 19:49:51 by tle-dref         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+
+#include <stdarg.h>
 
 int		ft_printf(const char *format, ...);
 int		select_ft(va_list args, char c);
