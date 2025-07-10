@@ -40,7 +40,7 @@ int	ft_putnbr_u_e(unsigned int n)
 
 	i = 0;
 	if (n > 9)
-		i += ft_putnbr_e(n / 10);
+		i += ft_putnbr_u_e(n / 10);
 	ft_putchar_fd((n % 10) + '0', 2);
 	i++;
 	return (i);
