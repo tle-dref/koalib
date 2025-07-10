@@ -4,7 +4,7 @@ CC 			= cc
 CFLAGS 		= -Wall -Wextra -Werror -g -I includes
 
 # Sous-dossiers contenant les fichiers sources
-SRC_DIRS 	= is lst mem str put to printf
+SRC_DIRS 	= is lst mem str put to printf printf_e
 
 # Fonctions regroupées par dossier
 IS 			= ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isprint
@@ -24,6 +24,8 @@ TO 			= ft_atoi ft_itoa ft_tolower ft_toupper
 
 PRINTF 		= ft_printf hexa nbrs utils
 
+PRINTF_E	= ft_printf_e hexa_e nbrs_e utils_e
+
 # Construction des chemins des fichiers .c et .o
 SRCS 		= $(addsuffix .c, $(addprefix src/is/, $(IS)) \
 					$(addprefix src/lst/, $(LST)) \
@@ -31,7 +33,8 @@ SRCS 		= $(addsuffix .c, $(addprefix src/is/, $(IS)) \
 					$(addprefix src/str/, $(STR)) \
 					$(addprefix src/put/, $(PUT)) \
 					$(addprefix src/to/, $(TO)) \
-					$(addprefix src/printf/, $(PRINTF)))
+					$(addprefix src/printf/, $(PRINTF)) \
+					$(addprefix src/printf_e/, $(PRINTF_E)))
 
 OBJS 		= $(SRCS:.c=.o)
 
